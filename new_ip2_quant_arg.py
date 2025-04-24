@@ -137,7 +137,8 @@ def filtering(input_file, output_dir):
 
 
 
-    output_full_path = output_dir + filename_no_ext + "_analyzed.xlsx"
+    output_full_path = output_dir + "/" + filename_no_ext + "_analyzed.xlsx"
+    print("this is the output:" + output_full_path)
     #print(user_output_name)
 
     writer = pd.ExcelWriter(output_full_path, engine='xlsxwriter')
